@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<title>Europe</title>
+	<meta charset="UTF-8">
+</head>
+
+<link href="StyleSheet.css" rel="stylesheet" type="text/css">
+
+<body> 
+	<div id="navbar">
+	 	<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\here we go.html" id="logo" class="Logo">Zachary<br/><br/>Ferretti</a>
+	  	<div id="navbar-right">
+		    <a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\new-england.html">New England</a>
+	  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\scotland.html">Europe</a>
+	  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\colorado.html">Colorado</a>
+	  		<a href= "C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\about.html">About</a>
+	  	</div>
+	</div>
+	<section>
+  		<img class="coloradoPhotosLeft" src="D:\Desktop\Photos To Sync Laptop\Europe\Edinburgh\IMG_4696.jpg" style="width:65%">
+  		<img class="coloradoPhotosRight" src="D:\Desktop\Photos To Sync Laptop\Europe\Edinburgh Sunset\IMG_5077.jpg" style="width:65%">
+  		<img class="coloradoPhotosLeft" src="D:\Desktop\Photos To Sync Laptop\Europe\Edinburgh Sunset\IMG_5135.jpg" style="width:36%">
+  		<img class="coloradoPhotosRight" src="D:\Desktop\Photos To Sync Laptop\Europe\Edinburgh Sunset\IMG_5027-HDR.jpg" style="width:35%">
+	</section>
+	<script>
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		    document.getElementById("navbar").style.padding = "30px 10px";
+		    document.getElementById("logo").style.fontSize = "25px";
+		  } else {
+		    document.getElementById("navbar").style.padding = "80px 10px";
+		    document.getElementById("logo").style.fontSize = "35px";
+		  }
+		}
+	</script>
+</body>
+</html>

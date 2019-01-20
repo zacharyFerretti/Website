@@ -9,45 +9,33 @@
 <link href="StyleSheet.css" rel="stylesheet" type="text/css">
 
 <body> 
-	<header>
-		<hgroup>
-			<h1> Zachary Ferretti </h1>
-		</hgroup>
-	</header>
-	<p> I am a landscape and portrait photographer, who started taking photos a little bit over 3 years ago. <br/> Since then my photography 
-		has pushed me to visit places I never imagined I would go, <br/>seen things I didn't think I would see,  
-		and do things I wouldn't have done. These are those photos. </p>
-	
 	<div id="navbar">
-
-		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\here we go.html">Home</a>
-
- 		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\new-england.html">New England</a>
-  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\scotland.html">Scotland</a>
-  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\colorado.html">Colorado</a>
-
-  		<a href= "C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\about.html">About</a>
-
+	 	<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\here we go.html" id="logo" class="Logo">Zachary<br/><br/>Ferretti</a>
+	  	<div id="navbar-right">
+		    <a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\new-england.html">New England</a>
+	  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\scotland.html">Europe</a>
+	  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\colorado.html">Colorado</a>
+	  		<a href= "C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\about.html">About</a>
+	  	</div>
 	</div>
-
-	<img src= "D:\Desktop\Photos To Sync Laptop\Colorado\Day Two Of Reworks\IMG_9465-Edit.jpg" alt="Colorado Highway" class = "coloradoHighway">
-	<p class = "coloradoHighwayCaption"> A photo on the way to aspen, after leaving frisco earlier that morning. </p>
+	<!--<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>-->
+	<section>
+  		<img class="coloradoPhotosLeft" src="D:\Desktop\Photos To Sync Laptop\Colorado\Day Three Of Reworks\IMG_0063-1.jpg" style="width:65%; padding-top:300px">
+  		<img class="coloradoPhotosRight" src="D:\Desktop\Photos To Sync Laptop\Colorado\Day Two Of Reworks\IMG_9465-Edit.jpg" style="width:65%">
+  		<img class="coloradoPhotosLeft" src="D:\Desktop\Photos To Sync Laptop\Colorado\Day One Of Reworks\IMG_8860.jpg" style="width:65%">
+  		<img class="coloradoPhotosRight" src="D:\Desktop\Photos To Sync Laptop\Colorado\Day Four Of Reworks\IMG_0264-Edit.jpg" style="width:65%">
+	</section>
 	<script>
-		// When the user scrolls the page, execute myFunction 
-		window.onscroll = function() {myFunction()};
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function() {scrollFunction()};
 
-		// Get the navbar
-		var navbar = document.getElementById("navbar");
-
-		// Get the offset position of the navbar
-		var sticky = navbar.offsetTop;
-
-		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-		    navbar.classList.add("sticky")
+		function scrollFunction() {
+		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		    document.getElementById("navbar").style.padding = "30px 10px";
+		    document.getElementById("logo").style.fontSize = "25px";
 		  } else {
-		    navbar.classList.remove("sticky");
+		    document.getElementById("navbar").style.padding = "80px 10px";
+		    document.getElementById("logo").style.fontSize = "35px";
 		  }
 		}
 	</script>

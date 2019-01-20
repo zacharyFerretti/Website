@@ -10,15 +10,13 @@
 
 <body> 
 	<div id="navbar">
-
-		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\here we go.html">Home</a>
-
- 		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\new-england.html">New England</a>
-  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\scotland.html">Scotland</a>
-  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\colorado.html">Colorado</a>
-
-  		<a href= "C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\about.html">About</a>
-
+	 	<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\here we go.html" id="logo">CompanyLogo</a>
+	  	<div id="navbar-right">
+		    <a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\new-england.html">New England</a>
+	  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\scotland.html">Europe</a>
+	  		<a href="C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\colorado.html">Colorado</a>
+	  		<a href= "C:\Users\Owner\Documents\GitHub\Website\My Own Website\Simple Website\about.html">About</a>
+	  	</div>
 	</div>
 
 	<img src="D:\Desktop\Photos To Sync Laptop\Colorado\Day One Of Reworks\IMG_8972.jpg" alt="Photo of Me" class = "about" align = 'left'>
@@ -28,21 +26,16 @@
 
 	<!--Create buttons which allow the user to click one displaying one of the photos from that page. So a button whose background is a photo with a label for the place. And the text can be specified-->
 	<script>
-		// When the user scrolls the page, execute myFunction 
-		window.onscroll = function() {myFunction()};
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function() {scrollFunction()};
 
-		// Get the navbar
-		var navbar = document.getElementById("navbar");
-
-		// Get the offset position of the navbar
-		var sticky = navbar.offsetTop;
-
-		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-		    navbar.classList.add("sticky")
+		function scrollFunction() {
+		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		    document.getElementById("navbar").style.padding = "30px 10px";
+		    document.getElementById("logo").style.fontSize = "25px";
 		  } else {
-		    navbar.classList.remove("sticky");
+		    document.getElementById("navbar").style.padding = "80px 10px";
+		    document.getElementById("logo").style.fontSize = "35px";
 		  }
 		}
 	</script>
