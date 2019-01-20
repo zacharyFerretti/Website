@@ -1,22 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700');
 body {
   font-family: 'Oswald', sans-serif;
+  font-size: 24px;
   background-color: white;
 }
+h2 {
+  fluid-type(font-size, 600px, 1200px, 500px, 32px);
+  margin: 0 auto -5vh;
+  display: block;
+  text-align:center;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  /*font-size: 5vw;*/
+}
+span{
+  max-font
+}
+h3{
+  text-align: center;
+}
 .colorado{
-  width:3840px; height:2160px; background:url('D:/Desktop/Background-Images/coneeu.jpg');
-  background-position: 0 0px;
-  background-size: cover;
+  /*width:3840px; height:2160px; background-image: url("D:/Desktop/Background-Images/Originals/IMG_0063-1.jpg");*/
+  background-image:url('D:/Desktop/Background-Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  background-position: 100% 0px;
+  
 }
 .newengland{
-  width:3840px; height:2160px; background:url('D:/Desktop/Background-Images/coneeu.jpg');
-  background-position: 0 2160px;
-  background-size: cover;
+  /*width:3840px; height:2160px; background-image: url("D:/Desktop/Background-Images/Originals/IMG_6004.jpg");*/
+  background-image:url('D:/Desktop/Background-Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  background-position: 100% 2160px;
 }
 .europe{
-  width:3840px; height:2160px; background:url('D:/Desktop/Background-Images/coneeu.jpg');
-  background-position: 0 4320px;
-  background-size: cover;
+  /*width:3840px; height:2160px; background-image: url("D:/Desktop/Background-Images/Originals/IMG_6215.jpg");*/
+  background:url('D:/Desktop/Background-Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  background-position: 100% 4320px;
 }
 .overlay {
   height: 100%;
@@ -31,7 +52,6 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
-
 .overlay-content {
   position: relative;
   top: 25%;
