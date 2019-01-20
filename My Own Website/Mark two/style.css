@@ -16,6 +16,9 @@ h2 {
   font-weight: 700;
   /*font-size: 5vw;*/
 }
+p{
+  font-weight: 300;
+}
 img{
   display: block;
   margin-left: auto;
@@ -24,11 +27,12 @@ img{
   height: auto;
   max-height: 540px;
 }
+/*
 figcaption{
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-}
+}*/
 span{
   font-weight: 700;
   font-family: 'Kalam', cursive;
@@ -44,20 +48,29 @@ h3{
   /*width:3840px; height:2160px; background-image: url("D:/Desktop/Background-Images/Originals/IMG_0063-1.jpg");*/
   background-image:url('D:/Desktop/Background-Images/coneeu.jpg');
   background-size: 1920px, 1080px;
-  background-position: 100% 0px;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 0px; 
   
 }
 .newengland{
   /*width:3840px; height:2160px; background-image: url("D:/Desktop/Background-Images/Originals/IMG_6004.jpg");*/
   background-image:url('D:/Desktop/Background-Images/coneeu.jpg');
   background-size: 1920px, 1080px;
-  background-position: 100% 2160px;
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -1080px; 
 }
 .europe{
   /*width:3840px; height:2160px; background-image: url("D:/Desktop/Background-Images/Originals/IMG_6215.jpg");*/
   background:url('D:/Desktop/Background-Images/coneeu.jpg');
   background-size: 1920px, 1080px;
-  background-position: 100% 4320px;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -2160px; 
 }
 .overlay {
   height: 100%;
