@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700');
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  background-color: #FFFCF8;
+  text-align: center;
+}
+h2 {
+  color: #353535;
+  font-size: 2vw;
+  margin: 0 auto -1.75vh;
+  display: block;
+  text-align:center;
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+}
+p{
+  margin: -5px auto 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*max-width: 65%;*/
+  font-weight: 300;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%;
+  height: auto;
+  max-height: 540px;
+}
+span{
+  font-weight: 700;
+  font-family: 'Kalam', cursive;
+  color:#353535;
+}
+h3{  
+  font-weight: 400;
+  font-family: 'Kalam', cursive;
+  color: #353535;
+  text-align: center;
+}
+.colorado{
+  background-image:url('./Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  /*This is quite possibly the shittiest work-around I have ever seen. I have no idea
+  what was the causing the issue, but I have found that by setting the width of this element (the top one)
+  to something greater than 1920px, it seems to fix the rest of them. I will in the future try and fix this but 
+  it is 1 AM and I am going to bed. */
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 0px; 
+  
+}
+.newengland{
+  background-image:url('./Images/coneeu.jpg');
+  /*background-size: 2500px, 1080px;*/
+  background-size: 1920px, 1080px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -1080px; 
+}
+.europe{
+  background:url('./Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -2160px; 
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  font-family: Oswald;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
