@@ -27,10 +27,30 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".sc").hover(function(){
-        $(this).parent().parent().addClass("europe");
+        $(this).parent().parent().addClass("scotland");
     });
     $(".sc").mouseleave(function(){
         //$(this).parent().parent().addClass("overlay");
-        $(this).parent().parent().removeClass("europe");
+        $(this).parent().parent().removeClass("scotland");
+    });
+});
+
+$(document).ready(function(){
+    $(".nh").hover(function(){
+        $(this).parent().parent().addClass("newhampshire");
+    });
+    $(".nh").mouseleave(function(){
+        //$(this).parent().parent().addClass("overlay");
+        $(this).parent().parent().removeClass("newhampshire");
+    });
+});
+
+$(document).ready(function(){
+    $(".me").hover(function(){
+        $(this).parent().parent().addClass("maine");
+    });
+    $(".me").mouseleave(function(){
+        //$(this).parent().parent().addClass("overlay");
+        $(this).parent().parent().removeClass("maine");
     });
 });

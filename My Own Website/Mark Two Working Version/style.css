@@ -27,8 +27,7 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 65%;
-  height: auto;
+  max-width: 65%;  
   max-height: 540px;
 }
 span{
@@ -41,6 +40,10 @@ h3{
   font-family: 'Kalam', cursive;
   color: #353535;
   text-align: center;
+}
+.coloradoFirst{
+  position: absolute;
+  clip: rect(0, 1920px, 1080px, 0);
 }
 .colorado{
   background-image:url('./Images/coneeu.jpg');
@@ -64,13 +67,29 @@ h3{
   background-attachment: fixed;
   background-position: 0 -1080px; 
 }
-.europe{
+.scotland{
+  background:url('./Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -4320px; 
+}
+.newhampshire{
   background:url('./Images/coneeu.jpg');
   background-size: 1920px, 1080px;
   
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 0 -2160px; 
+}
+.maine{
+  background:url('./Images/coneeu.jpg');
+  background-size: 1920px, 1080px;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -3240px; 
 }
 .overlay {
   height: 100%;
@@ -83,7 +102,7 @@ h3{
   background-color: rgba(0,0,0, 0.9);
   
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: .5s;
 }
 .overlay-content {
   position: relative;
@@ -100,7 +119,7 @@ h3{
   font-size: 36px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: .5s;
 }
 
 .overlay a:hover, .overlay a:focus {
